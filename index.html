@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <div class="title-box">
+            <span class="odin-header">
+                <img src="odin-lined.png" alt="odin logo" height="100px">ODIN
+            </span>
+        </div>
+        <div class="left-footer">Photo by <a href="#">Hallie West</a> on <a href="#">Unsplash</a></div>
+    </div>
+    <div class="right">
+        <div class="right-top">
+            <p class="right-header">This is not a real online service! You 
+                know you need something like this in your life to help you 
+                realize your deepest dreams. Sign up <em>now</em> to get 
+                started.
+            <br/><br/>You <em>know</em> you want to.</p>
+        </div>
+        <div class="right-center">
+            <h4>Let's do this!</h4>
+            <form class="inputs" action="#" method="post" id="my-form">
+                <div class="input">
+                    <label for="first-name">FIRST NAME <span style="color: red;">*</span></label>
+                    <input type="name" id="first-name" required>
+                </div>
+                <div class="input">
+                    <label for="last-name">LAST NAME <span style="color: red;">*</span></label>
+                    <input type="name" id="last-name" required>
+                </div>
+                <div class="input">
+                    <label for="email">EMAIL <span style="color: red;">*</span></label>
+                    <input type="email" id="email" placeholder="you@example.com"required >
+                </div>
+                <div class="input">
+                    <label for="phone-number">PHONE NUMBER </label>
+                    <input type="name" id="phone-number" pattern="(\d)+" title="Please enter a valid number">
+                </div>
+                <div class="input">
+                    <label for="pass">PASSWORD <span style="color: red;">*</span></label>
+                    <input type="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <div id="passbox"></div>
+                </div>
+                <div class="input">
+                    <label for="confirm-pass">CONFIRM PASSWORD <span style="color: red;">*</span></label>
+                    <input type="password" id="confirm-pass" required>
+                    <div id="confbox"></div>
+                </div>
+            </form>
+            <span style="font-size: 9px; font-weight: bold;">Fields with <span style="color: red;">*</span> are required</span>
+        </div>
+        <div class="right-bot">
+            <button type="submit" id="submit" value="Submit">Create Account</button>
+            <div class="login">Already have an account? <a href="#" style="color: #596D48;text-decoration-line: none;">Log in</a></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
